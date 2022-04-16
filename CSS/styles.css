@@ -27,6 +27,7 @@ body {
 h1, h2, h3 {
     color: var(--color-headings);
     margin-bottom: 1rem;
+    line-height: 1.1;
 }
 
 h1 {
@@ -148,7 +149,7 @@ a{
     margin-bottom: 1rem;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
     .list--tick .list__item {
         padding-left: 0;
     }
@@ -259,7 +260,7 @@ a{
     display: inline-block;
 }
 
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
     .btn {
         font-size: 1.5rem;
     }
@@ -371,7 +372,7 @@ a{
     right: 5%;
 }
 
-@media screen and (min-width: 2014px) {
+@media screen and (min-width: 1024px) {
     .plan__name {
         font-size: 1.4rem;
     }
@@ -685,5 +686,31 @@ a{
 
     .nav__item {
         border: 0;
+    }
+}
+
+/* Hero */
+.hero {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.hero__tagline {
+    font-size: 2rem;
+    color: #b9c3cf;
+    letter-spacing: 1px;
+    margin: 2rem 0 5rem;
+}
+
+.hero__image {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .hero {
+        padding-top: 0;
+    }
+    .hero__content {
+        text-align: left;
+        align-self: center;
     }
 }
