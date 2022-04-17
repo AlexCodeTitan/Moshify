@@ -454,6 +454,10 @@ a{
 
 }
 
+.quote__text {
+    font-size: 3rem;
+}
+
 .quote__text::before {
     content: open-quote;
 }
@@ -501,7 +505,7 @@ a{
     display: grid;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 960px) {
     .grid--1x2 {
         grid-template-columns: 1fr 1fr;
     }
@@ -525,6 +529,7 @@ a{
 
 .testimonial__image > img {
     width: 100%;
+    align-self: end;
 }
 
 .testimonial__image > .icon-container {
@@ -533,14 +538,18 @@ a{
     right: -32px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 960px) {
     .testimonial .quote, 
     .testimonial .quote__author {
         font-size: 2.4rem;
     }
 
+    .testimonial .quote__text {
+        font-size: 3rem;
+    }
+
     .testimonial .quote {
-        margin-left: 6rem;
+        margin-left: 8rem;
     }
 }
 
@@ -659,8 +668,8 @@ a{
 }
 
 .container {
-    max-width: 2040px;
-    margin: 0 auto;
+    max-width: 1240px;
+    margin: 6rem auto;
 }
 
 /* Nav bar */
